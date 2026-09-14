@@ -6,7 +6,7 @@ namespace CustomerService.Domain.Entities
     public class BillingAccount : BaseEntity<Guid>
     {
         public Guid CustomerId { get; set; }
-        public string AddressId { get; set; }
+        public Guid AddressId { get; set; }
         public string Name { get; set; }
         public string Number { get; set; }
         public string Description { get; set; }
@@ -20,9 +20,9 @@ namespace CustomerService.Domain.Entities
 
         }
 
-        public BillingAccount(Guid ıd, Guid customerId, string addressId, string name, string number, string description, BillingAccountType type, BillingAccountStatus status)
+        public BillingAccount(Guid id, Guid customerId, Guid addressId, string name, string number, string description, BillingAccountType type, BillingAccountStatus status)
         {
-            Id = ıd;
+            Id = id;
             CustomerId = customerId;
             AddressId = addressId;
             Name = name;

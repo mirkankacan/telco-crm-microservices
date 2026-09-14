@@ -3,6 +3,10 @@
     <Project Path="CustomerService/CustomerService.Application/CustomerService.Application.csproj" />
     <Project Path="CustomerService/CustomerService.Domain/CustomerService.Domain.csproj" />
     <Project Path="CustomerService/CustomerService.Infrastructure/CustomerService.Infrastructure.csproj" />
+    <Project Path="CustomerService/CustomerService.Persistence/CustomerService.Persistence.csproj" Id="f1f5617f-4fef-4a14-8bda-9e154bc4facc" />
     <Project Path="CustomerService/CustomerService.WebApi/CustomerService.WebApi.csproj" />
   </Folder>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
 </Solution>
